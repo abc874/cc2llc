@@ -17,4 +17,4 @@ cc2llc filename.cutlist
 filename.llc
 
 
-![All Releases](https://img.shields.io/github/downloads/abc874/cc2llc/total.svg)
+![GitHub all releases](https://img.shields.io/github/downloads/abc874/cc2llc/total)
