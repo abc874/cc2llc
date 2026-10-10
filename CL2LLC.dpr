@@ -14,7 +14,7 @@ uses
 
 procedure Convert(const AFile: string);
 var
-  Ini: TIniFile;
+  Ini: TMemIniFile;
   Lst: TStringList;
   Fmt: TFormatSettings;
   Section: string;
@@ -27,7 +27,7 @@ begin
   begin
     Fmt := TFormatSettings.Create('en');
     Lst := TStringList.Create;
-    Ini := TIniFile.Create(AFile);
+    Ini := TMemIniFile.Create(ExpandFileName(AFile));
     try
       Cnt := Ini.ReadInteger('General', 'NoOfCuts', 0);
 
